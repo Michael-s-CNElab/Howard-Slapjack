@@ -24,3 +24,16 @@ There are two sessions and three modes
 7. ICA
 8. ICLabel (keep brain and others)
 9. Extract epoch [Keyboard session (-0.3 ~ 1.2s), Gaze session (-3 ~ 10s)]
+
+## Hyplot code
+
+### There are many requirements for this code
+1. Already have **[Custom Colormap](https://www.mathworks.com/matlabcentral/fileexchange/69470-custom-colormap/)** in the system.
+2. Matlab above 2017b.
+3. The input array must 32*32 inter-brain matrix, this code will normalize into 0 to 1. 
+
+### For example usage:
+ ```matlab
+    load('test_matrix.mat')
+    PlotBrain(test_matrix)
+```
